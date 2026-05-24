@@ -6,6 +6,94 @@
 	<title>Nested HTML Tables</title>
 
 	<style>
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 8px;
+		}
+
+		.black-bg {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<table>
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<th>Nested Table 1</th>
+					</tr>
+					<tr>
+						<td>Data inside table 1</td>
+					</tr>
+				</table>
+			</td>
+
+			<td>
+				<table>
+					<tr>
+						<th colspan="2">Nested Table 2</th>
+					</tr>
+					<tr>
+						<th>Column 1</th>
+						<th>Column 2</th>
+					</tr>
+					<tr>
+						<td>Data 1</td>
+						<td>Data 2</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<th>Nested Table 3</th>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>List item 1</li>
+								<li>List item 2</li>
+								<li>List item 3</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</td>
+
+			<td>
+				<table>
+					<tr>
+						<th>Nested Table 4</th>
+					</tr>
+					<tr>
+						<td class="black-bg">HTML</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+</body>
+
+</html><!DOCTYPE html>
+<html>
+
+<head>
+	<title>Nested HTML Tables</title>
+
+	<style>
 		table, th, td {
 			border: 1px solid black;
 			border-collapse: collapse;
